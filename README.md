@@ -40,10 +40,10 @@ Se plantea una arquitectura robusta para el **Smart Car ESP32**, aplicando los c
 Una tarea de FreeRTOS recibe siempre un puntero de tipo void* (un puntero genérico).
 En el estándar de C, un void* es como una "dirección de memoria universal" que no tiene un tipo de dato asignado. Esto permite que FreeRTOS sea flexible y te deje pasarle cualquier cosa: desde un simple entero hasta una estructura gigante con toda la configuración del carro.
 
-Para usar los datos dentro de la lógica de tu función, debes realizar un casteo de tipo (typecast). Esto le dice al compilador: "Oye, este puntero genérico en realidad apunta a una estructura de este tipo".
-
 ### ¿Cuál es el tipo de dato que recibe? y ¿Cómo se convierte al tipo específico?
 Se utiliza el parámetro `pvParameters` de la función `xTaskCreate()`. Este puntero genérico `void*` permite pasar una estructura o variable a la tarea. Dentro de la función, se realiza un *casting* al tipo de dato original para acceder a la información.
+
+Para usar los datos dentro de la lógica de tu función, debes realizar un casteo de tipo (typecast). Esto le dice al compilador: "Oye, este puntero genérico en realidad apunta a una estructura de este tipo".
 
 ### ¿Qué pasa cuando una cola se llena?
 La tarea que intenta insertar un elemento puede bloquearse durante el tiempo definido en `ticksToWait`. Si el tiempo expira y la cola sigue llena, la función devuelve `errQUEUE_FULL` y el dato se descarta o debe ser manejado por la lógica del programa.
