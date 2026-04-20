@@ -57,4 +57,4 @@ El código fuente con los ejemplos de Deadlock y Race Conditions se encuentra en
 - `Preguntas_FreeRTOS/Preguntas_FreeRTOS.ino`
 
 ---
-*Desarrollado por: Juan Felipe Cárdenas - Ingeniería Informática, Universidad de La Sabana, 2026.*
+*Desarrollado por: Juan Felipe Moncada y Juan Felipe Cárdenas - Ingeniería Informática, Universidad de La Sabana, 2026.*
