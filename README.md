@@ -62,10 +62,4 @@ Es una condición donde dos o más tareas se bloquean mutuamente esperando recur
 - **Solución:** Siempre adquirir los recursos en el mismo orden jerárquico o usar *timeouts*.
 
 ---
-
-## 4. Anexos de Código
-El código fuente con los ejemplos de Deadlock y Race Conditions se encuentra en:
-- `Preguntas_FreeRTOS/Preguntas_FreeRTOS.ino`
-
----
 *Desarrollado por: Juan Felipe Moncada, Juan Felipe Cárdenas y Samuel Guerrero - Ingeniería Informática, Universidad de La Sabana, 2026.*
