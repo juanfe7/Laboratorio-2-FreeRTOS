@@ -23,7 +23,7 @@ El siguiente diagrama detalla la implementación de tareas concurrentes que reut
 Se plantea una arquitectura robusta para el **Smart Car ESP32**, aplicando los conceptos de FreeRTOS para gestionar telemetría y control sin bloqueos.
 
 <div align="center">
-  <img width="556" height="294" alt="image" src="https://github.com/user-attachments/assets/cf2b53ed-d64d-41af-a4d1-19eb442a1a48" />
+  <img width="368" height="373" alt="image" src="https://github.com/user-attachments/assets/44b477a4-d56b-415d-9b36-63f67e8f9481" />
   <p><i>Figura 2: Propuesta de arquitectura multi-core y gestión de recursos compartidos para el vehículo.</i></p>
 </div>
 
